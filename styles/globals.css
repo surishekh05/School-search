@@ -1,0 +1,44 @@
+@import "tailwindcss/preflight";
+@tailwind utilities;
+
+/* --- Custom Global Styles --- */
+
+/* Apply a smooth font everywhere */
+body {
+  @apply font-sans bg-gray-50 text-gray-800;
+  margin: 0;
+  padding: 0;
+}
+
+/* Headings styling */
+h1, h2, h3, h4, h5, h6 {
+  @apply font-bold text-gray-900;
+}
+
+/* Links styling */
+a {
+  @apply transition-colors duration-200;
+  text-decoration: none;
+}
+
+a:hover {
+  @apply text-blue-300;
+}
+
+/* Buttons base style */
+button {
+  @apply transition-colors duration-200;
+}
+
+button:disabled {
+  @apply bg-gray-400 cursor-not-allowed;
+}
+
+/* Input fields */
+input, textarea, select {
+  @apply border border-gray-300 rounded px-3 py-2 w-full mb-2;
+}
+
+input:focus, textarea:focus, select:focus {
+  @apply outline-none ring-2 ring-blue-400 border-blue-400;
+}
